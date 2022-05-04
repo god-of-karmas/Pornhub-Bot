@@ -1,7 +1,10 @@
-
-version: "4"
-  porn:
-    build: .
+build:
+  api:
+    context: api
+  frontend:
+    context: frontend
+    dockerfile: Dockerfile
+    target: dev
     environment:
     API_ID: $API_ID 
     API_HASH: $API_HASH 
